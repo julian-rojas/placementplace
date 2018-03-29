@@ -64,9 +64,9 @@
        // The shader as it is written operates on a scale that seems about
        // 100x larger than units in AFRAME
        // Scale hack,
-              // 0.01 * ((x - principleX)  * z / focalX) ,
-              // 0.01 * ((y - principleY) * z / focalY),
-              // 0.01 * (-z) );
+               0.1 * ((x - principleX)  * z / focalX) ,
+               0.1 * ((y - principleY) * z / focalY),
+               0.1 * (-z) );
       }
       void main() {
         vUv = vec2 (position.x/imageWidth, position.y/imageHeight);
