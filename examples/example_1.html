@@ -64,9 +64,9 @@
        // The shader as it is written operates on a scale that seems about
        // 100x larger than units in AFRAME
        // Scale hack,
-              0.01 * ((x - principleX)  * z / focalX) ,
-              0.01 * ((y - principleY) * z / focalY),
-              0.01 * (-z) );
+              // 0.01 * ((x - principleX)  * z / focalX) ,
+              // 0.01 * ((y - principleY) * z / focalY),
+              // 0.01 * (-z) );
       }
       void main() {
         vUv = vec2 (position.x/imageWidth, position.y/imageHeight);
@@ -140,7 +140,7 @@
             depthPrincipalPointY: 100;
             farClip: 5;
             nearClip: 0;
-            " position="0 0 0" scale="1 1 1" rotation="0 0 -90"> </a-entity>
+            " position="0 0 0" scale="1 1 1" rotation="0 0 0"> </a-entity>
   
 <!--  <a-box position='0 0.5 0' material='color: red;'></a-box> -->
     
