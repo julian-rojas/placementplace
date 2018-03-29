@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <script>
 	window.location.href = "examples/example_1.html";
 </script>
+=======
+  <head>
+    <meta charset="utf-8">
+    <title>Immersive Labs ARJS Test</title>
+    <meta name="description" content="Immersive Labs ARJS Test">  
+	<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
+</head>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='trackingMethod: best;'>
+		<!-- define your markers -->
+<a-marker-camera preset='hiro'></a-marker-camera>
+  <!-- here define the content to display on top of the marker -->
+  <a-box position='0 0.5 0' material='color: red;'></a-box>
+
+<!-- define a simple camera -->
+<!-- <a-entity camera></a-entity> -->
+		
+	</a-scene>
+</body>
+>>>>>>> 7344a485b754a14a38d4576f799ce9dd9c5202f0
 </html>
