@@ -6,6 +6,7 @@
  * Original at https://github.com/SimileSystems/DepthKitJS
 
  */
+var singlePlayer;
 
 ( function () {
 
@@ -18,6 +19,7 @@
 		var video          = document.createElement( 'video' );
 		 video.loop = true;
 		 video.id = properties.name;
+		singlePlayer = video;
 
 		var depthWidth   = properties.depthImageSizeX;
 		var depthHeight  = properties.depthImageSizeY;
