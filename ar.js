@@ -8269,30 +8269,17 @@ AFRAME.registerComponent('arjs-anchor', {
 			var markerParameters = Object.assign({}, arProfile.defaultMarkerParameters)
 
 			if( _this.data.preset === 'hiro' ){
-	
-			arProfile.defaultMarkerParameters.type = 'pattern'
-			arProfile.defaultMarkerParameters.patternUrl = THREEx.ArToolkitContext.baseURL+'examples/marker-training/examples/pattern-files/pattern-hiro.patt'
-			arProfile.defaultMarkerParameters.markersAreaEnabled = false
-			
+				markerParameters.type = 'pattern'
+				markerParameters.patternUrl = THREEx.ArToolkitContext.baseURL+'examples/marker-training/examples/pattern-files/pattern-hiro.patt'
+				markerParameters.markersAreaEnabled = false
 			}else if( _this.data.preset === 'kanji' ){
-		
-			arProfile.defaultMarkerParameters.type = 'pattern'
-			arProfile.defaultMarkerParameters.patternUrl = THREEx.ArToolkitContext.baseURL+'examples/marker-training/examples/pattern-files/pattern-kanji.patt'
-			arProfile.defaultMarkerParameters.markersAreaEnabled = false
-			
+				markerParameters.type = 'pattern'
+				markerParameters.patternUrl = THREEx.ArToolkitContext.baseURL+'examples/marker-training/examples/pattern-files/pattern-kanji.patt'
+				markerParameters.markersAreaEnabled = false
 			}else if( _this.data.preset === 'area' ){
-		
-			arProfile.defaultMarkerParameters.type = 'barcode'
-			arProfile.defaultMarkerParameters.barcodeValue = 1001	
-			arProfile.defaultMarkerParameters.markersAreaEnabled = true
- 
-			}else if( _this.data.preset === 'custom' ){
-		
-			arProfile.defaultMarkerParameters.type = 'pattern'
-			arProfile.defaultMarkerParameters.patternUrl = _this.data.patternUrl;
-			arProfile.defaultMarkerParameters.markersAreaEnabled = false
- 
-	
+				markerParameters.type = 'barcode'
+				markerParameters.barcodeValue = 1001
+				markerParameters.markersAreaEnabled = true
 			}else if( _this.data.type === 'barcode' ){
 				markerParameters = {
 					type:               _this.data.type,
