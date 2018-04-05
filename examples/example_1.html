@@ -115,13 +115,8 @@
 </head>
 
 <body style='margin : 0px; overflow: hidden;'>
- <!-- play button -->
-  
-<a href="javascript:singlePlayer.play();">play</a> 
 
-  <!-- ar.js scene begins here -->
-  
-  <a-scene embedded arjs>
+<a-scene embedded arjs cursor="rayOrigin: mouse">
 
 <!-- define your markers -->
 
@@ -147,8 +142,6 @@
             nearClip: 0;
             " position="-0.2 -0.8 0" scale="1 0.8 0.5" rotation="0 0 -90"> </a-entity>
   
- 
-  
 <!--  <a-box position='0 0.5 0' material='color: red;'></a-box> -->
     
 
@@ -159,18 +152,6 @@
     
 <a-marker-camera preset='custom' type='pattern' url='../pattern-marker.patt'></a-marker-camera>
   
-  
-      <a-entity rgbd-video="
-            name:video;
-            depthFocalLengthX: 365.6989135742188;
-            depthFocalLengthY: 365.6989135742188;
-            depthImageSizeX: 512;
-            depthImageSizeY: 424;
-            depthPrincipalPointX: 257.6430969238281;
-            depthPrincipalPointY: 100;
-            farClip: 1200;
-            nearClip: 0;
-            " position="-0.2 -0.8 0" scale="1 0.8 0.5" rotation="0 0 -90"> </a-entity>
  
 
 </a-scene>
