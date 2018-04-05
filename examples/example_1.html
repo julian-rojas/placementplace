@@ -111,6 +111,7 @@
 <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
 <script src="../dist/volu-vid-component.js"></script>
+<script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
 
 </head>
 
@@ -141,6 +142,8 @@
             farClip: 1200;
             nearClip: 0;
             " position="-0.2 -0.8 0" scale="1 0.8 0.5" rotation="0 0 -90"> </a-entity>
+
+            <a-entity geometry="primitive:box;" material="shader:gif;src:https://media.giphy.com/media/l3fQ6daXY4PmIo7Zu/giphy.gif;color:green;opacity:.8"></a-entity>
   
 <!--  <a-box position='0 0.5 0' material='color: red;'></a-box> -->
     

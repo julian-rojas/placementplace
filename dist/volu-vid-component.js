@@ -18,7 +18,7 @@
 		var video          = document.createElement( 'video' );
 		 video.loop = true;
 		 video.id = properties.name;
-
+		 video.muted = true;
 		var depthWidth   = properties.depthImageSizeX;
 		var depthHeight  = properties.depthImageSizeY;
 		var isPlaying    = false;
