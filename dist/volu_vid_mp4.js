@@ -6,6 +6,8 @@
  * Original at https://github.com/SimileSystems/DepthKitJS
  */
 
+var singlePlayer;
+
 ( function () {
 
 	var precision      = 1;
@@ -16,6 +18,7 @@
 
 		var video          = document.createElement( 'video' );
 		 video.loop = true;
+		 singlePlayer = video;
 		 video.id = properties.name;
 		 video.muted = true;
 		var depthWidth   = properties.depthImageSizeX;
@@ -125,7 +128,7 @@
 
 			video.src = 'rgbd_files/' + properties.name + '.mp4';
 
-			video.play();
+			//video.play();
 
 			interval = setInterval( function () {
 
@@ -195,7 +198,7 @@
       //  var el = document.querySelector('#my-volumetric-video');
         var video = new RGBDVideo(this.data);
         this.el.setObject3D('mesh', video);
-	      video.play();
+	      //video.play();
       },
 
     });
