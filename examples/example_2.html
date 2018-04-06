@@ -114,9 +114,17 @@
 <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
 
 </head>
+  
+<body>
+	  <div style="z-index:100; position:absolute; background-color: rgba(0,0,0,0);  pointer-events: none; color:#fff; position:fixed; height:100%; top:0px; width:96%; left:0px; font-size:2vh;">
+		  <div style="background-color: rgba(0,0,0,0.3); position:absolute; pointer-events: auto; bottom:0px; left:0px; font-family: sans-serif; padding:8px;">
+          <span style="font-size:16px;">
+			  Click <a href="javascript:singlePlayer.play()">Play</a>
+          </span>
+      </div>  
+	  </div>
 
-<body style='margin : 0px; overflow: hidden;'>
-  <div style="z-index:10; position:absolute; "><a href="javascript:singlePlayer.(play);">play</a></div>
+
 
 <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;' vr-mode-ui="enabled: false" >
 <!-- define your markers -->
