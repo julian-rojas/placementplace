@@ -22,7 +22,7 @@
 		var depthWidth   = properties.depthImageSizeX;
 		var depthHeight  = properties.depthImageSizeY;
 		var isPlaying    = false;
-		var imageTexture = THREE.TextureLoader( 'depthkit/files/' + properties.name + '.png' );
+		var imageTexture = THREE.TextureLoader( 'rgbd_files/' + properties.name + '.png' );
 		var videoTexture = new THREE.Texture( video );
 
 		for ( var y = 0; y < depthHeight; y += precision ) {
