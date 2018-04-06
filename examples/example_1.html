@@ -122,12 +122,7 @@
 
 
 
-
-
-
-
-<!-- here define the content to display on top of the marker -->
-
+<a-marker preset='hiro'>
 
 
       <a-entity rgbd-video="
@@ -142,20 +137,23 @@
             nearClip: 0;
             " position="1.7 0.5 1" scale="1 0.8 0.5" rotation="0 0 0"> </a-entity>
 
-            <!-- <a-entity geometry="primitive:box;"  position="0 0 0" scale="1 1 0.001" rotation="0 0 0" 
-                      material="shader:gif;src:url(https://i.imgur.com/WGTEXnS.gif);opacity:1"></a-entity> -->
-            
+  <!-- <a-entity geometry="primitive:box;"  position="0 0 0" scale="1 1 0.001" rotation="0 0 0" 
+       material="shader:gif;src:url(https://i.imgur.com/WGTEXnS.gif);opacity:1"></a-entity> -->
+  
+  </a-marker>
+  
+  
+ <a-marker preset='kanji'>
+   
              <a-entity gltf-model="url(../standin.gltf)"> </a-entity> 
   
-<!--  <a-box position='0 0.5 0' material='color: red;'></a-box> -->
-    
-
+  </a-marker>
 
 
 <!-- define a simple camera -->
-<!-- <a-entity camera></a-entity> -->
-    
-<a-marker-camera preset='custom' type='pattern' url='../pattern-marker.patt'></a-marker-camera>
+<a-entity camera></a-entity> 
+  
+
   
  
 
