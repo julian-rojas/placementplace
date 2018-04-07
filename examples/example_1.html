@@ -151,7 +151,10 @@
   
   
  <a-marker preset='kanji'>
-   <a-entity 
+  
+                                                                     <a-entity position = "0 0 0">
+                                                                                                 
+                                                                     <a-entity 
                 
                 geometry="primitive:box;"  
                                          
@@ -161,9 +164,9 @@
                              
                 rotation="0 0 0" 
                                 
-                material="shader:gif;src:url(this is not a gif);opacity:1"
+                material="shader:gif;src:url(this is not a gif);opacity:1">
                
-                animation attribute="scale"
+                <a-animation attribute="scale"
                 
                 dur="2000"
                 
@@ -176,6 +179,10 @@
                 easing = "ease-in-out-circ"
                                            
                 repeat = "indefinite"
+
+</a-animation>
+                                     
+</a-entity>
                                      
 </a-entity>
 
