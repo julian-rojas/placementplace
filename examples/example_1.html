@@ -149,7 +149,6 @@
            
 <!-- ///////////////////////////////////////////////////////////////////////////// -->
 
-                          
 <a-entity rgbd-video="
            
             name:video_ben;
@@ -161,33 +160,33 @@
             depthPrincipalPointY: 207.3386993408203;
             farClip: 1204;
             nearClip: 434;
-            " position="4.266 1.923 -0.848" scale="2 2 0.9" rotation="0 11.345 0"> 
+            " position="3 0 0" scale="2 2 0.9" rotation="0 11.345 0"> 
                                                                      
             </a-entity>
 
-                <a-entity position = "0 0 -2.043">
+<a-entity position = "0 0 0">
                                                                                                  
                 <a-entity 
                 
-                geometry="primitive:sphere;"  
+                geometry="primitive:cylinder;"  
                                          
-                position="0.989 1.655 0.909" 
+                position="0 0 0" 
                                 
                 scale="0.1 0.1 0.1" 
                              
-                rotation="0 0 0" 
+                rotation="0 0 -90" 
                                 
-                color: "#0000FF"
+                color: "white"
         
-                opacity: "0.5">
+                opacity: "0.1">
                
                 <a-animation attribute="scale"
                 
                 dur="2000"
                 
-                from="5 1 1"
+                from="0.4 0.1 0.1"
                 
-                to=" 0 1 1"
+                to=" 0 0.1 0.1"
                            
                 direction ='alternate-reverse'
                 
@@ -197,33 +196,22 @@
 
 </a-animation>
                                      
-                <a-animation attribute="position"
+               
+                       
+</a-entity>
+  
+                                     <a-entity gltf-model="url(../jacksigbig.gltf)"
                 
-                dur="2000"
-                
-                from="0 0 0"
-                
-                to=" 5 0 0"
-                           
-                direction ='alternate-reverse'
-                
-                easing = "ease-in-out-circ"
-                                           
-                repeat = "indefinite"
-
-</a-animation>
-                 
-               <a-entity gltf-model="url(../jacksigbig.gltf)"
-                
-                position="0.968 1.509 -1.146" 
+                position="0 0 0" 
                                 
                 scale="0.342 0.342 0.342" 
                              
-                rotation="0 -156.24 0" </a-entity>                       
+                rotation="0 -156.24 0" </a-entity>            
+                                     
 </a-entity>
+                  
 
-</a-entity>
-             
+                    
 
 
 <!-- ///////////////////////////////////////////////////////////////////////////// -->
