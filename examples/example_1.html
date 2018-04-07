@@ -152,6 +152,7 @@
   
  <a-marker preset='kanji'>
    <a-entity 
+                
                 geometry="primitive:box;"  
                                          
                 position="0 0 0" 
@@ -161,17 +162,26 @@
                 rotation="0 0 0" 
                                 
                 material="shader:gif;src:url(this is not a gif);opacity:1"
-                                                                 
-                animation="property: color; dir: alternate; dur: 1000;
-                           easing: easeInSine; loop: true; to: #5F5"
-                animation__scale="property: scale; dir: alternate; dur: 200;
-                           easing: easeInSine; loop: true; to: 1.2 1 1.2"
-                animation__yoyo="property: position; dir: alternate; dur: 1000;
-                                 easing: easeInSine; loop: true; to: 0 2 0">
+               
+                <a-animation attribute="scale"
+                
+                dur="2000"
+                
+                from="1 1 1"
+                
+                to=" 0 1 1"
+                           
+                direction ='alternate-reverse'
+                
+                easing = "ease-in-out-circ"
+                                           
+                repeat = "indefinite"></a-animation>
+                                     
 </a-entity>
-             <a-entity gltf-model="url(../standin.gltf)"> </a-entity> 
+
+<a-entity gltf-model="url(../standin.gltf)"> </a-entity> 
   
-  </a-marker>
+</a-marker>
 
 
 <!-- define a simple camera -->
