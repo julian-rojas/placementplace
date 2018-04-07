@@ -122,6 +122,10 @@
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="../dist/volu-vid-component.js"></script>
 
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="../dist/volu-vid-component.js"></script>
+<script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+<script src=../aframe-animation-component.min.js"></script>  
 
   </head>
   <body>
@@ -151,6 +155,68 @@
             farClip: 1200;
             nearClip: 0;
             " position="0 .3 0" scale="1 1 1" rotation="0 0 -90"> </a-entity>
+	
+	
+	
+	
+	    <a-marker preset='kanji'>
+ 
+                                                                     <a-entity position = "0 0 0">
+                                                                                                 
+                                                                     <a-entity 
+                
+                geometry="primitive:box;"  
+                                         
+                position="0 0 0" 
+                                
+                scale="5 1 1" 
+                             
+                rotation="0 0 0" 
+                                
+                material="shader:gif;src:url(this is not a gif);opacity:1">
+               
+                <a-animation attribute="scale"
+                
+                dur="2000"
+                
+                from="5 1 1"
+                
+                to=" 0 1 1"
+                           
+                direction ='alternate-reverse'
+                
+                easing = "ease-in-out-circ"
+                                           
+                repeat = "indefinite"
+</a-animation>
+                                     
+                <a-animation attribute="position"
+                
+                dur="2000"
+                
+                from="0 0 0"
+                
+                to=" 5 0 0"
+                           
+                direction ='alternate-reverse'
+                
+                easing = "ease-in-out-circ"
+                                           
+                repeat = "indefinite"
+</a-animation>
+                                     
+</a-entity>
+                                     
+</a-entity>
+<a-entity gltf-model="url(../jacksigbig.gltf)">
+                
+                position="0 0 0" 
+                                
+                scale="0.7 0.7 0.7" 
+                             
+                rotation="0 0 0" </a-entity> 
+  
+
 	</a-scene>
 
 
