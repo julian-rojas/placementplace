@@ -119,13 +119,66 @@
 <body style='margin : 0px; overflow: hidden;'>
 
 <a-scene>
+                                                 
 <!-- define your markers -->
 
 
+<!-- here's where we mess around -->
+   
+                                                
+                                                 <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="../dist/volu-vid-component.js"></script>
 
 
+  </head>
+  <body>
+    <a-scene>
+
+	  <a-entity position="0 3 0" geometry="primitive: plane; width: auto; height: auto" material="color: #000"
+                  text="color: white; align: center; value: [ Use WASD to navigate ] ; width: 4; ">
+	  </a-entity>
+
+      <a-entity camera look-controls wasd-controls="fly:true;" position="0 2 4"> </a-entity>
+
+      <a-sky src="assets/sky.jpg"></a-sky>
+
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-box position="-1 0.5 .3" rotation="0 45 0" width="1.5" height="1.5" depth="1.5" color="#4CC3D9"></a-box>
+      <a-cylinder position=".25 0.75 3.7"  radius="0.125" height="4.5" color="#FFC65D"></a-cylinder>
+      <a-cylinder position="0 0 0" radius="12" height=".1" rotation="0 0 0"  color="#7BC8A4"></a-cylinder>
+
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+<!-- here's the stuff we want to keep! -->
+                                                 
+                                                 
+                                                 
+                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
+                                                 
 <a-entity rgbd-video="
            
+        
             name:video;
             depthFocalLengthX: 364.8008117675781;
             depthFocalLengthY: 364.8008117675781;
@@ -137,18 +190,18 @@
             nearClip: 2.124150276184082;
             " position="1.7 0.5 1" scale="1 0.8 0.5" rotation="0 0 0"> 
                                                                      
+                                                                     
 </a-entity>
                                                                      
 <!-- Here's our empty gif animation to obscure our signature -->
    
 
                                                                            
-<!-- ok that was fun --> 
-  
+
 
                                                                      <a-entity position = "0 0 0">
                                                                                                  
-                                                                     <a-entity 
+                <a-entity 
                 
                 geometry="primitive:box;"  
                                          
@@ -175,6 +228,7 @@
                 repeat = "indefinite"
 
 </a-animation>
+              
                                      
                 <a-animation attribute="position"
                 
@@ -190,13 +244,18 @@
                                            
                 repeat = "indefinite"
 
+                                     
 </a-animation>
                                      
 </a-entity>
                                      
 </a-entity>
-
-<a-entity gltf-model="url(../jacksigbig.gltf)">
+                                     
+                                     
+<!-- and here's jack's signature -->
+                                     
+                                     
+<a-entity gltf-model="url(../jacksigbig.gltf)"
                 
                 position="0 0 0" 
                                 
@@ -204,7 +263,8 @@
                              
                 rotation="0 0 0" </a-entity> 
 
-
+<!-- ok that was fun --> 
+  
 
 <!-- define a simple camera -->
 <a-entity camera></a-entity> 
