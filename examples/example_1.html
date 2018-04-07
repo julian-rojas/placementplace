@@ -112,6 +112,8 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
 <script src="../dist/volu-vid-component.js"></script>
 <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+<script src=../aframe-animation-component.min.js"></script>  
+  
 
 </head>
 
@@ -124,8 +126,8 @@
 
 <a-marker preset='hiro'>
 
-
-      <a-entity rgbd-video="
+<a-entity rgbd-video="
+           
             name:video;
             depthFocalLengthX: 365.6989135742188;
             depthFocalLengthY: 365.6989135742188;
@@ -135,17 +137,38 @@
             depthPrincipalPointY: 100;
             farClip: 1200;
             nearClip: 0;
-            " position="1.7 0.5 1" scale="1 0.8 0.5" rotation="0 0 0"> </a-entity>
-<!-- comment out this gif when  you're done checking it out -->
+            " position="1.7 0.5 1" scale="1 0.8 0.5" rotation="0 0 0"> 
+                                                                     
+</a-entity>
+                                                                     
+<!-- Here's our empty gif animation to obscure our signature -->
+   
+
+                                                                           
+<!-- ok that was fun --> 
   
-   <a-entity geometry="primitive:box;"  position="0 0 0" scale="1 1 0.001" rotation="0 0 0" 
-       material="shader:gif;src:url(https://i.imgur.com/WGTEXnS.gif);opacity:1"></a-entity> 
-  
-  </a-marker>
+</a-marker>
   
   
  <a-marker preset='kanji'>
-   
+   <a-entity 
+                geometry="primitive:box;"  
+                                         
+                position="0 0 0" 
+                                
+                scale="1 1 1" 
+                             
+                rotation="0 0 0" 
+                                
+                material="shader:gif;src:url(this is not a gif);opacity:1"
+                                                                 
+                animation="property: color; dir: alternate; dur: 1000;
+                           easing: easeInSine; loop: true; to: #5F5"
+                animation__scale="property: scale; dir: alternate; dur: 200;
+                           easing: easeInSine; loop: true; to: 1.2 1 1.2"
+                animation__yoyo="property: position; dir: alternate; dur: 1000;
+                                 easing: easeInSine; loop: true; to: 0 2 0">
+</a-entity>
              <a-entity gltf-model="url(../standin.gltf)"> </a-entity> 
   
   </a-marker>
