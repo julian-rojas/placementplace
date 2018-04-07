@@ -121,7 +121,6 @@
     </script>
 
 <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
 <script src="../dist/volu-vid-component.js"></script>
 <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
 <script src=../aframe-animation-component.min.js"></script>  
@@ -149,7 +148,7 @@
 <!-- ///////////////////////////////////////////////////////////////////////////// -->
            
 <!-- ///////////////////////////////////////////////////////////////////////////// -->
-<a-entity position="0 0 0">
+<a-entity position="-0.3 0.3 0.3" scale="0.5 0.5 0.5" rotation="0 0 0" >
                           
 <a-entity rgbd-video="
            
@@ -170,15 +169,17 @@
                                                                                                  
                 <a-entity 
                 
-                geometry="primitive:box;"  
+                geometry="primitive:sphere;"  
                                          
                 position="0.989 1.655 0.909" 
                                 
-                scale="1.194 0.331 0.103" 
+                scale="0.1 0.1 0.1" 
                              
                 rotation="0 0 0" 
                                 
-                material="shader:gif;src:url(this is not a gif);opacity:1">
+                color: "#0000FF"
+        
+                opacity: "0.5">
                
                 <a-animation attribute="scale"
                 
@@ -211,25 +212,20 @@
                 repeat = "indefinite"
 
 </a-animation>
-                                     
-</a-entity>
-                                     
-</a-entity>
-
-<a-entity gltf-model="url(../jacksigbig.gltf)"
+                 
+               <a-entity gltf-model="url(../jacksigbig.gltf)"
                 
                 position="0.968 1.509 -1.146" 
                                 
                 scale="0.342 0.342 0.342" 
                              
-                rotation="0 -156.24 0" </a-entity> 
- 
- </a-entity>
-                                      
-                
+                rotation="0 -156.24 0" </a-entity>                       
+</a-entity>
 
+</a-entity>
+                  
+</a-entity>
 
-  
 
 <!-- ///////////////////////////////////////////////////////////////////////////// -->
 
